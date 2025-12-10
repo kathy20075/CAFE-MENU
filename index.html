@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aesthetic Bites Café</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>✨ Aesthetic Bites Café ✨</h1>
+        <p class="tagline">Delicious food made with love ♥</p>
+
+        <!-- SEARCH BAR -->
+        <input type="text" id="searchBar" placeholder="Search food..." onkeyup="searchFood()">
+    </header>
+
+    <!-- FOOD GRID -->
+    <section class="menu-grid">
+
+        <div class="card" onclick="showInfo('Biriyani')">
+            <img src="images/biriyani.jpg" alt="Biriyani">
+            <h3>Biriyani</h3>
+            <p class="price">₹249</p>
+        </div>
+
+        <div class="card" onclick="showInfo('Burger')">
+            <img src="images/burger.jpg" alt="Burger">
+            <h3>Burger</h3>
+            <p class="price">₹220</p>
+        </div>
+
+        <div class="card" onclick="showInfo('Chocolate Cake')">
+            <img src="images/chocolatecake.jpg" alt="Chocolate Cake">
+            <h3>Chocolate Cake</h3>
+            <p class="price">₹270</p>
+        </div>
+
+        <div class="card" onclick="showInfo('Coffee')">
+            <img src="images/coffee.jpg" alt="Coffee">
+            <h3>Coffee</h3>
+            <p class="price">₹199</p>
+        </div>
+
+        <div class="card" onclick="showInfo('Fried Rice')">
+            <img src="images/friedrice.jpg" alt="Fried Rice">
+            <h3>Fried Rice</h3>
+            <p class="price">₹230</p>
+        </div>
+
+        <div class="card" onclick="showInfo('Fries')">
+            <img src="images/fries.jpg" alt="Fries">
+            <h3>Fries</h3>
+            <p class="price">₹210</p>
+        </div>
+
+        <div class="card" onclick="showInfo('Momos')">
+            <img src="images/momos.jpg" alt="Momos">
+            <h3>Momos</h3>
+            <p class="price">₹260</p>
+        </div>
+
+        <div class="card" onclick="showInfo('Pizza')">
+            <img src="images/pizza.jpg" alt="Pizza">
+            <h3>Pizza</h3>
+            <p class="price">₹299</p>
+        </div>
+
+        <div class="card" onclick="showInfo('Sandwich')">
+            <img src="images/sandwich.jpg" alt="Sandwich">
+            <h3>Sandwich</h3>
+            <p class="price">₹240</p>
+        </div>
+
+        <div class="card" onclick="showInfo('White Sauce Pasta')">
+            <img src="images/whitesaucepasta.jpg" alt="White Sauce Pasta">
+            <h3>White Sauce Pasta</h3>
+            <p class="price">₹280</p>
+        </div>
+
+        <div class="card" onclick="showInfo('Smoothie')">
+            <img src="images/smoothie.jpg" alt="Smoothie">
+            <h3>Smoothie</h3>
+            <p class="price">₹250</p>
+        </div>
+
+    </section>
+
+    <!-- POPUP BOX -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2 id="foodName"></h2>
+            <p id="nutrition"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
